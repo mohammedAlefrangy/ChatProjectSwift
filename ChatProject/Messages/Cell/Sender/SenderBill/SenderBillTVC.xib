@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderBillTVC" rowHeight="248" id="0ey-Wl-awD" customClass="SenderBillTVC" customModule="Provider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0ey-Wl-awD" id="Gdj-CF-1dx">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="248"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMa-5p-9gl">
+                        <rect key="frame" x="24" y="0.0" width="366" height="232"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:18 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVC-Hr-S2x">
+                                <rect key="frame" x="0.0" y="220" width="46" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="ejo-cV-QIQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="#838383"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39t-Yc-l7m">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="210"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HAf-Vq-0hX" customClass="IntrinsicTableView" customModule="Provider" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="18" width="366" height="192"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="HAf-Vq-0hX" firstAttribute="leading" secondItem="39t-Yc-l7m" secondAttribute="leading" id="Met-Be-uhv"/>
+                                    <constraint firstAttribute="bottom" secondItem="HAf-Vq-0hX" secondAttribute="bottom" id="XCq-m3-7UR"/>
+                                    <constraint firstItem="HAf-Vq-0hX" firstAttribute="top" secondItem="39t-Yc-l7m" secondAttribute="top" constant="18" id="aFw-if-4iC"/>
+                                    <constraint firstAttribute="trailing" secondItem="HAf-Vq-0hX" secondAttribute="trailing" id="idn-Ci-g2y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.7725490196" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setBorder">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NVC-Hr-S2x" firstAttribute="top" secondItem="39t-Yc-l7m" secondAttribute="bottom" constant="10" id="7lE-9G-C6P"/>
+                            <constraint firstItem="39t-Yc-l7m" firstAttribute="top" secondItem="eMa-5p-9gl" secondAttribute="top" id="FIy-8e-U6t"/>
+                            <constraint firstAttribute="trailing" secondItem="39t-Yc-l7m" secondAttribute="trailing" id="MOU-jj-a7c"/>
+                            <constraint firstItem="39t-Yc-l7m" firstAttribute="leading" secondItem="eMa-5p-9gl" secondAttribute="leading" id="k5S-eZ-lz7"/>
+                            <constraint firstItem="NVC-Hr-S2x" firstAttribute="leading" secondItem="eMa-5p-9gl" secondAttribute="leading" id="mhJ-Mg-kWE"/>
+                            <constraint firstAttribute="bottom" secondItem="NVC-Hr-S2x" secondAttribute="bottom" id="rHk-Pl-zTC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eMa-5p-9gl" secondAttribute="bottom" constant="16" id="1P3-Lp-xUo"/>
+                    <constraint firstItem="eMa-5p-9gl" firstAttribute="leading" secondItem="Gdj-CF-1dx" secondAttribute="leading" constant="24" id="27h-1m-3zw"/>
+                    <constraint firstItem="eMa-5p-9gl" firstAttribute="top" secondItem="Gdj-CF-1dx" secondAttribute="top" id="I6Z-hR-8Tz"/>
+                    <constraint firstAttribute="trailing" secondItem="eMa-5p-9gl" secondAttribute="trailing" constant="24" id="cwI-Fq-nGw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="billDetails" destination="HAf-Vq-0hX" id="M2H-tZ-YG5"/>
+                <outlet property="messageContainerView" destination="39t-Yc-l7m" id="rmU-zT-ynQ"/>
+                <outlet property="messageTimeLbl" destination="NVC-Hr-S2x" id="VX4-UT-tGO"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="341.51785714285711"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="HAf-Vq-0hX">
+            <size key="intrinsicContentSize" width="-1" height="200"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="#838383">
+            <color red="0.51399999856948853" green="0.51399999856948853" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

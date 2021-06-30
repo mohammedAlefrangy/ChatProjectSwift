@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoMessageTVC" rowHeight="167" id="KGk-i7-Jjw" customClass="VideoMessageTVC" customModule="ChatProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gH3-nA-Bgd">
+                        <rect key="frame" x="24" y="0.0" width="368" height="157"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:18 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDw-vJ-C6a">
+                                <rect key="frame" x="0.0" y="148" width="46" height="9"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="#838383"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-x2-aVv" customClass="PlayerView" customModule="ChatProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="205" height="140"/>
+                                <color key="backgroundColor" name="#06b57d"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="O2M-NN-nvB"/>
+                                    <constraint firstAttribute="height" constant="140" id="rMN-p0-WKp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.7725490196" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DEr-x2-aVv" firstAttribute="top" secondItem="gH3-nA-Bgd" secondAttribute="top" id="4aR-xE-Y20"/>
+                            <constraint firstAttribute="bottom" secondItem="uDw-vJ-C6a" secondAttribute="bottom" id="9MX-EL-hUC"/>
+                            <constraint firstItem="DEr-x2-aVv" firstAttribute="leading" secondItem="gH3-nA-Bgd" secondAttribute="leading" id="Ywm-fM-efi"/>
+                            <constraint firstItem="uDw-vJ-C6a" firstAttribute="top" secondItem="DEr-x2-aVv" secondAttribute="bottom" constant="8" id="ste-Lc-cNu"/>
+                            <constraint firstItem="uDw-vJ-C6a" firstAttribute="leading" secondItem="gH3-nA-Bgd" secondAttribute="leading" id="vxB-9V-T8Z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gH3-nA-Bgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="8Wu-1e-j1M"/>
+                    <constraint firstAttribute="trailing" secondItem="gH3-nA-Bgd" secondAttribute="trailing" constant="24" id="Anq-0g-Dhn"/>
+                    <constraint firstItem="gH3-nA-Bgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LZs-6i-ufp"/>
+                    <constraint firstAttribute="bottom" secondItem="gH3-nA-Bgd" secondAttribute="bottom" constant="8" id="gSB-CD-82k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageTimeLbl" destination="uDw-vJ-C6a" id="VxF-8u-DBG"/>
+                <outlet property="playerView" destination="DEr-x2-aVv" id="90U-u4-KU0"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="#06b57d">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#838383">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

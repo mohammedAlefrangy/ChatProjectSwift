@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10487D61267F0FC4008700B0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10487D60267F0FC3008700B0 /* UIView+Extension.swift */; };
+		10487D65267F12A1008700B0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10487D64267F12A1008700B0 /* Constant.swift */; };
+		10487D69267F1793008700B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10487D68267F1793008700B0 /* GoogleService-Info.plist */; };
+		10487D6D267F1890008700B0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10487D6C267F1890008700B0 /* Message.swift */; };
+		10487D73267F26A1008700B0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10487D72267F26A1008700B0 /* String+Extension.swift */; };
+		10487D8F267F3EF1008700B0 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10487D8E267F3EF1008700B0 /* PlayerView.swift */; };
+		10487D95267F3F65008700B0 /* VideoMessageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10487D93267F3F65008700B0 /* VideoMessageTVC.swift */; };
+		10487D96267F3F65008700B0 /* VideoMessageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10487D94267F3F65008700B0 /* VideoMessageTVC.xib */; };
+		10A2CD44268C576100D4B3E1 /* ReciverVideoMessageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2CD42268C576100D4B3E1 /* ReciverVideoMessageTVC.swift */; };
+		10A2CD45268C576100D4B3E1 /* ReciverVideoMessageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A2CD43268C576100D4B3E1 /* ReciverVideoMessageTVC.xib */; };
+		10C6088C26846A6C00B5B99A /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C6088B26846A6C00B5B99A /* CameraHandler.swift */; };
+		10C6088F26846AE700B5B99A /* MyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C6088E26846AE700B5B99A /* MyTools.swift */; };
+		A9A6EB759746948B97C99AD0 /* Pods_ChatProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27F45036EBD215AD0CFC998 /* Pods_ChatProject.framework */; };
+		BF208CC2267D058E0000EB10 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208CC1267D058E0000EB10 /* UITableView+Extension.swift */; };
+		BF208CCD267D07270000EB10 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208CCC267D07270000EB10 /* UIViewController+Extension.swift */; };
+		BF524F7D26769F6500DD5AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F7C26769F6500DD5AD0 /* AppDelegate.swift */; };
+		BF524F7F26769F6500DD5AD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F7E26769F6500DD5AD0 /* SceneDelegate.swift */; };
+		BF524F8426769F6500DD5AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF524F8226769F6500DD5AD0 /* Main.storyboard */; };
+		BF524F8626769F7200DD5AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF524F8526769F7200DD5AD0 /* Assets.xcassets */; };
+		BF524F8926769F7200DD5AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF524F8726769F7200DD5AD0 /* LaunchScreen.storyboard */; };
+		BF524FBE26769F8700DD5AD0 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F9126769F8600DD5AD0 /* MessageVC.swift */; };
+		BF524FBF26769F8700DD5AD0 /* ShowImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F9226769F8600DD5AD0 /* ShowImagesVC.swift */; };
+		BF524FC026769F8700DD5AD0 /* ReciverBillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F9626769F8600DD5AD0 /* ReciverBillTVC.swift */; };
+		BF524FC126769F8700DD5AD0 /* ReciverBillTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524F9726769F8600DD5AD0 /* ReciverBillTVC.xib */; };
+		BF524FC226769F8700DD5AD0 /* ReciverBillFooterTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524F9926769F8700DD5AD0 /* ReciverBillFooterTVC.xib */; };
+		BF524FC326769F8700DD5AD0 /* ReciverBillFooterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F9A26769F8700DD5AD0 /* ReciverBillFooterTVC.swift */; };
+		BF524FC426769F8700DD5AD0 /* ReciverBillDetailsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524F9B26769F8700DD5AD0 /* ReciverBillDetailsTVC.xib */; };
+		BF524FC526769F8700DD5AD0 /* ReciverBillDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F9C26769F8700DD5AD0 /* ReciverBillDetailsTVC.swift */; };
+		BF524FC626769F8700DD5AD0 /* ReciverSoundMessageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524F9E26769F8700DD5AD0 /* ReciverSoundMessageTVC.xib */; };
+		BF524FC726769F8700DD5AD0 /* ReciverSoundMessageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524F9F26769F8700DD5AD0 /* ReciverSoundMessageTVC.swift */; };
+		BF524FC826769F8700DD5AD0 /* ReciverImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FA126769F8700DD5AD0 /* ReciverImageTVC.swift */; };
+		BF524FC926769F8700DD5AD0 /* ReciverImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FA226769F8700DD5AD0 /* ReciverImageTVC.xib */; };
+		BF524FCA26769F8700DD5AD0 /* ReciverTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FA426769F8700DD5AD0 /* ReciverTVC.swift */; };
+		BF524FCB26769F8700DD5AD0 /* ReciverTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FA526769F8700DD5AD0 /* ReciverTVC.xib */; };
+		BF524FCC26769F8700DD5AD0 /* SenderVoiceTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FA826769F8700DD5AD0 /* SenderVoiceTVC.xib */; };
+		BF524FCD26769F8700DD5AD0 /* SenderVoiceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FA926769F8700DD5AD0 /* SenderVoiceTVC.swift */; };
+		BF524FCE26769F8700DD5AD0 /* SenderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FAB26769F8700DD5AD0 /* SenderTVC.xib */; };
+		BF524FCF26769F8700DD5AD0 /* SenderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FAC26769F8700DD5AD0 /* SenderTVC.swift */; };
+		BF524FD026769F8700DD5AD0 /* SenderBillFooterTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FAF26769F8700DD5AD0 /* SenderBillFooterTVC.xib */; };
+		BF524FD126769F8700DD5AD0 /* SenderBillFooterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FB026769F8700DD5AD0 /* SenderBillFooterTVC.swift */; };
+		BF524FD226769F8700DD5AD0 /* BillDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FB126769F8700DD5AD0 /* BillDetailsTVC.swift */; };
+		BF524FD326769F8700DD5AD0 /* BillDetailsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FB226769F8700DD5AD0 /* BillDetailsTVC.xib */; };
+		BF524FD426769F8700DD5AD0 /* SenderBillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FB326769F8700DD5AD0 /* SenderBillTVC.swift */; };
+		BF524FD526769F8700DD5AD0 /* SenderBillTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FB426769F8700DD5AD0 /* SenderBillTVC.xib */; };
+		BF524FD626769F8700DD5AD0 /* SenderImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FB626769F8700DD5AD0 /* SenderImageTVC.xib */; };
+		BF524FD726769F8700DD5AD0 /* SenderImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FB726769F8700DD5AD0 /* SenderImageTVC.swift */; };
+		BF524FD826769F8700DD5AD0 /* SoundMessageTestTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FB926769F8700DD5AD0 /* SoundMessageTestTVC.swift */; };
+		BF524FD926769F8700DD5AD0 /* SoundMessageTestTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FBA26769F8700DD5AD0 /* SoundMessageTestTVC.xib */; };
+		BF524FDA26769F8700DD5AD0 /* SendingTimeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF524FBC26769F8700DD5AD0 /* SendingTimeTVC.xib */; };
+		BF524FDB26769F8700DD5AD0 /* SendingTimeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF524FBD26769F8700DD5AD0 /* SendingTimeTVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10487D60267F0FC3008700B0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		10487D64267F12A1008700B0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		10487D68267F1793008700B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10487D6C267F1890008700B0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		10487D72267F26A1008700B0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		10487D8E267F3EF1008700B0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		10487D93267F3F65008700B0 /* VideoMessageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMessageTVC.swift; sourceTree = "<group>"; };
+		10487D94267F3F65008700B0 /* VideoMessageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoMessageTVC.xib; sourceTree = "<group>"; };
+		10A2CD42268C576100D4B3E1 /* ReciverVideoMessageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciverVideoMessageTVC.swift; sourceTree = "<group>"; };
+		10A2CD43268C576100D4B3E1 /* ReciverVideoMessageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReciverVideoMessageTVC.xib; sourceTree = "<group>"; };
+		10C6088B26846A6C00B5B99A /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		10C6088E26846AE700B5B99A /* MyTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTools.swift; sourceTree = "<group>"; };
+		4E431EDC7A41BD71D87C351F /* Pods-ChatProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatProject.debug.xcconfig"; path = "Target Support Files/Pods-ChatProject/Pods-ChatProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BF208CC1267D058E0000EB10 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		BF208CCC267D07270000EB10 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BF524F7926769F6500DD5AD0 /* ChatProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF524F7C26769F6500DD5AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF524F7E26769F6500DD5AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF524F8326769F6500DD5AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF524F8526769F7200DD5AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF524F8826769F7200DD5AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF524F8A26769F7200DD5AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF524F9126769F8600DD5AD0 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		BF524F9226769F8600DD5AD0 /* ShowImagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowImagesVC.swift; sourceTree = "<group>"; };
+		BF524F9626769F8600DD5AD0 /* ReciverBillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciverBillTVC.swift; sourceTree = "<group>"; };
+		BF524F9726769F8600DD5AD0 /* ReciverBillTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverBillTVC.xib; sourceTree = "<group>"; };
+		BF524F9926769F8700DD5AD0 /* ReciverBillFooterTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverBillFooterTVC.xib; sourceTree = "<group>"; };
+		BF524F9A26769F8700DD5AD0 /* ReciverBillFooterTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciverBillFooterTVC.swift; sourceTree = "<group>"; };
+		BF524F9B26769F8700DD5AD0 /* ReciverBillDetailsTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverBillDetailsTVC.xib; sourceTree = "<group>"; };
+		BF524F9C26769F8700DD5AD0 /* ReciverBillDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciverBillDetailsTVC.swift; sourceTree = "<group>"; };
+		BF524F9E26769F8700DD5AD0 /* ReciverSoundMessageTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverSoundMessageTVC.xib; sourceTree = "<group>"; };
+		BF524F9F26769F8700DD5AD0 /* ReciverSoundMessageTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciverSoundMessageTVC.swift; sourceTree = "<group>"; };
+		BF524FA126769F8700DD5AD0 /* ReciverImageTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciverImageTVC.swift; sourceTree = "<group>"; };
+		BF524FA226769F8700DD5AD0 /* ReciverImageTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverImageTVC.xib; sourceTree = "<group>"; };
+		BF524FA426769F8700DD5AD0 /* ReciverTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReciverTVC.swift; sourceTree = "<group>"; };
+		BF524FA526769F8700DD5AD0 /* ReciverTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReciverTVC.xib; sourceTree = "<group>"; };
+		BF524FA826769F8700DD5AD0 /* SenderVoiceTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderVoiceTVC.xib; sourceTree = "<group>"; };
+		BF524FA926769F8700DD5AD0 /* SenderVoiceTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderVoiceTVC.swift; sourceTree = "<group>"; };
+		BF524FAB26769F8700DD5AD0 /* SenderTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderTVC.xib; sourceTree = "<group>"; };
+		BF524FAC26769F8700DD5AD0 /* SenderTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderTVC.swift; sourceTree = "<group>"; };
+		BF524FAF26769F8700DD5AD0 /* SenderBillFooterTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderBillFooterTVC.xib; sourceTree = "<group>"; };
+		BF524FB026769F8700DD5AD0 /* SenderBillFooterTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderBillFooterTVC.swift; sourceTree = "<group>"; };
+		BF524FB126769F8700DD5AD0 /* BillDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillDetailsTVC.swift; sourceTree = "<group>"; };
+		BF524FB226769F8700DD5AD0 /* BillDetailsTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillDetailsTVC.xib; sourceTree = "<group>"; };
+		BF524FB326769F8700DD5AD0 /* SenderBillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderBillTVC.swift; sourceTree = "<group>"; };
+		BF524FB426769F8700DD5AD0 /* SenderBillTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderBillTVC.xib; sourceTree = "<group>"; };
+		BF524FB626769F8700DD5AD0 /* SenderImageTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SenderImageTVC.xib; sourceTree = "<group>"; };
+		BF524FB726769F8700DD5AD0 /* SenderImageTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderImageTVC.swift; sourceTree = "<group>"; };
+		BF524FB926769F8700DD5AD0 /* SoundMessageTestTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundMessageTestTVC.swift; sourceTree = "<group>"; };
+		BF524FBA26769F8700DD5AD0 /* SoundMessageTestTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundMessageTestTVC.xib; sourceTree = "<group>"; };
+		BF524FBC26769F8700DD5AD0 /* SendingTimeTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendingTimeTVC.xib; sourceTree = "<group>"; };
+		BF524FBD26769F8700DD5AD0 /* SendingTimeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingTimeTVC.swift; sourceTree = "<group>"; };
+		E27F45036EBD215AD0CFC998 /* Pods_ChatProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEF6B999962185091298A02 /* Pods-ChatProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatProject.release.xcconfig"; path = "Target Support Files/Pods-ChatProject/Pods-ChatProject.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF524F7626769F6500DD5AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A6EB759746948B97C99AD0 /* Pods_ChatProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10487D63267F1296008700B0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				10487D64267F12A1008700B0 /* Constant.swift */,
+				10C6088E26846AE700B5B99A /* MyTools.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		10487D6B267F1881008700B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				10487D6C267F1890008700B0 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10487D8D267F3EE5008700B0 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				10487D8E267F3EF1008700B0 /* PlayerView.swift */,
+				10C6088B26846A6C00B5B99A /* CameraHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		10487D92267F3F2A008700B0 /* VideoTVC */ = {
+			isa = PBXGroup;
+			children = (
+				10487D93267F3F65008700B0 /* VideoMessageTVC.swift */,
+				10487D94267F3F65008700B0 /* VideoMessageTVC.xib */,
+			);
+			path = VideoTVC;
+			sourceTree = "<group>";
+		};
+		10A2CD27268C550F00D4B3E1 /* ReciverVideoTVC */ = {
+			isa = PBXGroup;
+			children = (
+				10A2CD42268C576100D4B3E1 /* ReciverVideoMessageTVC.swift */,
+				10A2CD43268C576100D4B3E1 /* ReciverVideoMessageTVC.xib */,
+			);
+			path = ReciverVideoTVC;
+			sourceTree = "<group>";
+		};
+		34AC10EA8EF8F702CE68F35A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E27F45036EBD215AD0CFC998 /* Pods_ChatProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D7120D2AB3571F9FAA788E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E431EDC7A41BD71D87C351F /* Pods-ChatProject.debug.xcconfig */,
+				EEEF6B999962185091298A02 /* Pods-ChatProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF208CC0267D05780000EB10 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				10487D8D267F3EE5008700B0 /* Handler */,
+				10487D63267F1296008700B0 /* Main */,
+				BF208CCB267D07170000EB10 /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BF208CCB267D07170000EB10 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF208CC1267D058E0000EB10 /* UITableView+Extension.swift */,
+				BF208CCC267D07270000EB10 /* UIViewController+Extension.swift */,
+				10487D60267F0FC3008700B0 /* UIView+Extension.swift */,
+				10487D72267F26A1008700B0 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF524F7026769F6500DD5AD0 = {
+			isa = PBXGroup;
+			children = (
+				BF524F7B26769F6500DD5AD0 /* ChatProject */,
+				BF524F7A26769F6500DD5AD0 /* Products */,
+				8D7120D2AB3571F9FAA788E3 /* Pods */,
+				34AC10EA8EF8F702CE68F35A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF524F7A26769F6500DD5AD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F7926769F6500DD5AD0 /* ChatProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF524F7B26769F6500DD5AD0 /* ChatProject */ = {
+			isa = PBXGroup;
+			children = (
+				10487D6B267F1881008700B0 /* Model */,
+				BF524F7C26769F6500DD5AD0 /* AppDelegate.swift */,
+				BF524F7E26769F6500DD5AD0 /* SceneDelegate.swift */,
+				BF208CC0267D05780000EB10 /* Helper */,
+				BF524F9026769F8600DD5AD0 /* Messages */,
+				BF524F8226769F6500DD5AD0 /* Main.storyboard */,
+				BF524F8526769F7200DD5AD0 /* Assets.xcassets */,
+				BF524F8726769F7200DD5AD0 /* LaunchScreen.storyboard */,
+				10487D68267F1793008700B0 /* GoogleService-Info.plist */,
+				BF524F8A26769F7200DD5AD0 /* Info.plist */,
+			);
+			path = ChatProject;
+			sourceTree = "<group>";
+		};
+		BF524F9026769F8600DD5AD0 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F9126769F8600DD5AD0 /* MessageVC.swift */,
+				BF524F9226769F8600DD5AD0 /* ShowImagesVC.swift */,
+				BF524F9326769F8600DD5AD0 /* Cell */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		BF524F9326769F8600DD5AD0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F9426769F8600DD5AD0 /* Reciver */,
+				BF524FA626769F8700DD5AD0 /* Sender */,
+				BF524FB826769F8700DD5AD0 /* SoundMessgaeTest */,
+				BF524FBB26769F8700DD5AD0 /* TimeTVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BF524F9426769F8600DD5AD0 /* Reciver */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F9526769F8600DD5AD0 /* ReciverBill */,
+				BF524F9D26769F8700DD5AD0 /* ReciverSoundMessage */,
+				10A2CD27268C550F00D4B3E1 /* ReciverVideoTVC */,
+				BF524FA026769F8700DD5AD0 /* ReciverImage */,
+				BF524FA326769F8700DD5AD0 /* ReciverText */,
+			);
+			path = Reciver;
+			sourceTree = "<group>";
+		};
+		BF524F9526769F8600DD5AD0 /* ReciverBill */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F9626769F8600DD5AD0 /* ReciverBillTVC.swift */,
+				BF524F9726769F8600DD5AD0 /* ReciverBillTVC.xib */,
+				BF524F9826769F8600DD5AD0 /* ReciverBillDetailsTVC */,
+			);
+			path = ReciverBill;
+			sourceTree = "<group>";
+		};
+		BF524F9826769F8600DD5AD0 /* ReciverBillDetailsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F9926769F8700DD5AD0 /* ReciverBillFooterTVC.xib */,
+				BF524F9A26769F8700DD5AD0 /* ReciverBillFooterTVC.swift */,
+				BF524F9B26769F8700DD5AD0 /* ReciverBillDetailsTVC.xib */,
+				BF524F9C26769F8700DD5AD0 /* ReciverBillDetailsTVC.swift */,
+			);
+			path = ReciverBillDetailsTVC;
+			sourceTree = "<group>";
+		};
+		BF524F9D26769F8700DD5AD0 /* ReciverSoundMessage */ = {
+			isa = PBXGroup;
+			children = (
+				BF524F9E26769F8700DD5AD0 /* ReciverSoundMessageTVC.xib */,
+				BF524F9F26769F8700DD5AD0 /* ReciverSoundMessageTVC.swift */,
+			);
+			path = ReciverSoundMessage;
+			sourceTree = "<group>";
+		};
+		BF524FA026769F8700DD5AD0 /* ReciverImage */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FA126769F8700DD5AD0 /* ReciverImageTVC.swift */,
+				BF524FA226769F8700DD5AD0 /* ReciverImageTVC.xib */,
+			);
+			path = ReciverImage;
+			sourceTree = "<group>";
+		};
+		BF524FA326769F8700DD5AD0 /* ReciverText */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FA426769F8700DD5AD0 /* ReciverTVC.swift */,
+				BF524FA526769F8700DD5AD0 /* ReciverTVC.xib */,
+			);
+			path = ReciverText;
+			sourceTree = "<group>";
+		};
+		BF524FA626769F8700DD5AD0 /* Sender */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FA726769F8700DD5AD0 /* SenderVoice */,
+				BF524FAA26769F8700DD5AD0 /* SenderText */,
+				BF524FAD26769F8700DD5AD0 /* SenderBill */,
+				10487D92267F3F2A008700B0 /* VideoTVC */,
+				BF524FB526769F8700DD5AD0 /* SenderImage */,
+			);
+			path = Sender;
+			sourceTree = "<group>";
+		};
+		BF524FA726769F8700DD5AD0 /* SenderVoice */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FA826769F8700DD5AD0 /* SenderVoiceTVC.xib */,
+				BF524FA926769F8700DD5AD0 /* SenderVoiceTVC.swift */,
+			);
+			path = SenderVoice;
+			sourceTree = "<group>";
+		};
+		BF524FAA26769F8700DD5AD0 /* SenderText */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FAB26769F8700DD5AD0 /* SenderTVC.xib */,
+				BF524FAC26769F8700DD5AD0 /* SenderTVC.swift */,
+			);
+			path = SenderText;
+			sourceTree = "<group>";
+		};
+		BF524FAD26769F8700DD5AD0 /* SenderBill */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FAE26769F8700DD5AD0 /* BillDetailsTVC */,
+				BF524FB326769F8700DD5AD0 /* SenderBillTVC.swift */,
+				BF524FB426769F8700DD5AD0 /* SenderBillTVC.xib */,
+			);
+			path = SenderBill;
+			sourceTree = "<group>";
+		};
+		BF524FAE26769F8700DD5AD0 /* BillDetailsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FAF26769F8700DD5AD0 /* SenderBillFooterTVC.xib */,
+				BF524FB026769F8700DD5AD0 /* SenderBillFooterTVC.swift */,
+				BF524FB126769F8700DD5AD0 /* BillDetailsTVC.swift */,
+				BF524FB226769F8700DD5AD0 /* BillDetailsTVC.xib */,
+			);
+			path = BillDetailsTVC;
+			sourceTree = "<group>";
+		};
+		BF524FB526769F8700DD5AD0 /* SenderImage */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FB626769F8700DD5AD0 /* SenderImageTVC.xib */,
+				BF524FB726769F8700DD5AD0 /* SenderImageTVC.swift */,
+			);
+			path = SenderImage;
+			sourceTree = "<group>";
+		};
+		BF524FB826769F8700DD5AD0 /* SoundMessgaeTest */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FB926769F8700DD5AD0 /* SoundMessageTestTVC.swift */,
+				BF524FBA26769F8700DD5AD0 /* SoundMessageTestTVC.xib */,
+			);
+			path = SoundMessgaeTest;
+			sourceTree = "<group>";
+		};
+		BF524FBB26769F8700DD5AD0 /* TimeTVC */ = {
+			isa = PBXGroup;
+			children = (
+				BF524FBC26769F8700DD5AD0 /* SendingTimeTVC.xib */,
+				BF524FBD26769F8700DD5AD0 /* SendingTimeTVC.swift */,
+			);
+			path = TimeTVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF524F7826769F6500DD5AD0 /* ChatProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF524F8D26769F7200DD5AD0 /* Build configuration list for PBXNativeTarget "ChatProject" */;
+			buildPhases = (
+				664D1313BD40A93473587303 /* [CP] Check Pods Manifest.lock */,
+				BF524F7526769F6500DD5AD0 /* Sources */,
+				BF524F7626769F6500DD5AD0 /* Frameworks */,
+				BF524F7726769F6500DD5AD0 /* Resources */,
+				F3A64CB2A2454A31E3FB2B6C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatProject;
+			productName = ChatProject;
+			productReference = BF524F7926769F6500DD5AD0 /* ChatProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF524F7126769F6500DD5AD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BF524F7826769F6500DD5AD0 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = BF524F7426769F6500DD5AD0 /* Build configuration list for PBXProject "ChatProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF524F7026769F6500DD5AD0;
+			productRefGroup = BF524F7A26769F6500DD5AD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF524F7826769F6500DD5AD0 /* ChatProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF524F7726769F6500DD5AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF524FC426769F8700DD5AD0 /* ReciverBillDetailsTVC.xib in Resources */,
+				BF524F8926769F7200DD5AD0 /* LaunchScreen.storyboard in Resources */,
+				BF524F8626769F7200DD5AD0 /* Assets.xcassets in Resources */,
+				BF524FD926769F8700DD5AD0 /* SoundMessageTestTVC.xib in Resources */,
+				BF524FD326769F8700DD5AD0 /* BillDetailsTVC.xib in Resources */,
+				10487D96267F3F65008700B0 /* VideoMessageTVC.xib in Resources */,
+				BF524FDA26769F8700DD5AD0 /* SendingTimeTVC.xib in Resources */,
+				BF524F8426769F6500DD5AD0 /* Main.storyboard in Resources */,
+				BF524FCB26769F8700DD5AD0 /* ReciverTVC.xib in Resources */,
+				BF524FC926769F8700DD5AD0 /* ReciverImageTVC.xib in Resources */,
+				BF524FC226769F8700DD5AD0 /* ReciverBillFooterTVC.xib in Resources */,
+				BF524FC126769F8700DD5AD0 /* ReciverBillTVC.xib in Resources */,
+				10A2CD45268C576100D4B3E1 /* ReciverVideoMessageTVC.xib in Resources */,
+				10487D69267F1793008700B0 /* GoogleService-Info.plist in Resources */,
+				BF524FD026769F8700DD5AD0 /* SenderBillFooterTVC.xib in Resources */,
+				BF524FCE26769F8700DD5AD0 /* SenderTVC.xib in Resources */,
+				BF524FC626769F8700DD5AD0 /* ReciverSoundMessageTVC.xib in Resources */,
+				BF524FCC26769F8700DD5AD0 /* SenderVoiceTVC.xib in Resources */,
+				BF524FD526769F8700DD5AD0 /* SenderBillTVC.xib in Resources */,
+				BF524FD626769F8700DD5AD0 /* SenderImageTVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		664D1313BD40A93473587303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3A64CB2A2454A31E3FB2B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatProject/Pods-ChatProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatProject/Pods-ChatProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatProject/Pods-ChatProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF524F7526769F6500DD5AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF524FBE26769F8700DD5AD0 /* MessageVC.swift in Sources */,
+				BF524FD826769F8700DD5AD0 /* SoundMessageTestTVC.swift in Sources */,
+				BF208CC2267D058E0000EB10 /* UITableView+Extension.swift in Sources */,
+				BF524FC826769F8700DD5AD0 /* ReciverImageTVC.swift in Sources */,
+				BF524F7D26769F6500DD5AD0 /* AppDelegate.swift in Sources */,
+				BF524FD126769F8700DD5AD0 /* SenderBillFooterTVC.swift in Sources */,
+				BF524FC326769F8700DD5AD0 /* ReciverBillFooterTVC.swift in Sources */,
+				BF524FCA26769F8700DD5AD0 /* ReciverTVC.swift in Sources */,
+				10487D8F267F3EF1008700B0 /* PlayerView.swift in Sources */,
+				10A2CD44268C576100D4B3E1 /* ReciverVideoMessageTVC.swift in Sources */,
+				BF208CCD267D07270000EB10 /* UIViewController+Extension.swift in Sources */,
+				BF524FC526769F8700DD5AD0 /* ReciverBillDetailsTVC.swift in Sources */,
+				10487D95267F3F65008700B0 /* VideoMessageTVC.swift in Sources */,
+				BF524F7F26769F6500DD5AD0 /* SceneDelegate.swift in Sources */,
+				BF524FD226769F8700DD5AD0 /* BillDetailsTVC.swift in Sources */,
+				BF524FDB26769F8700DD5AD0 /* SendingTimeTVC.swift in Sources */,
+				BF524FD726769F8700DD5AD0 /* SenderImageTVC.swift in Sources */,
+				BF524FCF26769F8700DD5AD0 /* SenderTVC.swift in Sources */,
+				10487D61267F0FC4008700B0 /* UIView+Extension.swift in Sources */,
+				10487D73267F26A1008700B0 /* String+Extension.swift in Sources */,
+				BF524FBF26769F8700DD5AD0 /* ShowImagesVC.swift in Sources */,
+				10487D6D267F1890008700B0 /* Message.swift in Sources */,
+				BF524FC026769F8700DD5AD0 /* ReciverBillTVC.swift in Sources */,
+				BF524FC726769F8700DD5AD0 /* ReciverSoundMessageTVC.swift in Sources */,
+				10C6088F26846AE700B5B99A /* MyTools.swift in Sources */,
+				10487D65267F12A1008700B0 /* Constant.swift in Sources */,
+				10C6088C26846A6C00B5B99A /* CameraHandler.swift in Sources */,
+				BF524FCD26769F8700DD5AD0 /* SenderVoiceTVC.swift in Sources */,
+				BF524FD426769F8700DD5AD0 /* SenderBillTVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF524F8226769F6500DD5AD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF524F8326769F6500DD5AD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF524F8726769F7200DD5AD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF524F8826769F7200DD5AD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF524F8B26769F7200DD5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF524F8C26769F7200DD5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF524F8E26769F7200DD5AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E431EDC7A41BD71D87C351F /* Pods-ChatProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 472F9ZR78Q;
+				INFOPLIST_FILE = ChatProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahedTech.LITtracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BF524F8F26769F7200DD5AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEF6B999962185091298A02 /* Pods-ChatProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 472F9ZR78Q;
+				INFOPLIST_FILE = ChatProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahedTech.LITtracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF524F7426769F6500DD5AD0 /* Build configuration list for PBXProject "ChatProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF524F8B26769F7200DD5AD0 /* Debug */,
+				BF524F8C26769F7200DD5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF524F8D26769F7200DD5AD0 /* Build configuration list for PBXNativeTarget "ChatProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF524F8E26769F7200DD5AD0 /* Debug */,
+				BF524F8F26769F7200DD5AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF524F7126769F6500DD5AD0 /* Project object */;
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderImageTVC" id="zon-qT-lF4" customClass="SenderImageTVC" customModule="ChatProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zon-qT-lF4" id="7Mt-9o-kl9">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-1p-Aa5">
+                        <rect key="frame" x="24" y="0.0" width="366" height="158"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:18 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpg-Ut-vbh">
+                                <rect key="frame" x="0.0" y="148" width="46" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="#838383"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUv-Bf-kYk">
+                                <rect key="frame" x="0.0" y="0.0" width="205" height="140"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="303-3034733_funny-animals-full-hd-wallpapers-cat-desktop-background" translatesAutoresizingMaskIntoConstraints="NO" id="1rQ-yp-Ex7">
+                                        <rect key="frame" x="0.0" y="0.0" width="205" height="140"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1rQ-yp-Ex7" firstAttribute="leading" secondItem="gUv-Bf-kYk" secondAttribute="leading" id="12n-gR-dHL"/>
+                                    <constraint firstAttribute="width" constant="205" id="BbO-61-xRL"/>
+                                    <constraint firstAttribute="bottom" secondItem="1rQ-yp-Ex7" secondAttribute="bottom" id="VjE-5l-ylc"/>
+                                    <constraint firstAttribute="height" constant="140" id="uzm-NM-ehi"/>
+                                    <constraint firstAttribute="trailing" secondItem="1rQ-yp-Ex7" secondAttribute="trailing" id="vdI-ad-Emt"/>
+                                    <constraint firstItem="1rQ-yp-Ex7" firstAttribute="top" secondItem="gUv-Bf-kYk" secondAttribute="top" id="zoM-S6-1I7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76470588240000004" green="0.7725490196" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setBorder">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hpg-Ut-vbh" secondAttribute="bottom" id="6rn-lE-SqW"/>
+                            <constraint firstItem="gUv-Bf-kYk" firstAttribute="top" secondItem="c8S-1p-Aa5" secondAttribute="top" id="ASa-EE-GK8"/>
+                            <constraint firstItem="hpg-Ut-vbh" firstAttribute="leading" secondItem="c8S-1p-Aa5" secondAttribute="leading" id="Niu-aY-7Pc"/>
+                            <constraint firstItem="gUv-Bf-kYk" firstAttribute="leading" secondItem="c8S-1p-Aa5" secondAttribute="leading" id="bxJ-sI-j52"/>
+                            <constraint firstItem="hpg-Ut-vbh" firstAttribute="top" secondItem="gUv-Bf-kYk" secondAttribute="bottom" constant="8" id="tPa-ec-AjM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="c8S-1p-Aa5" secondAttribute="bottom" constant="8" id="Vng-AB-94l"/>
+                    <constraint firstItem="c8S-1p-Aa5" firstAttribute="top" secondItem="7Mt-9o-kl9" secondAttribute="top" id="Y8Y-eO-q21"/>
+                    <constraint firstItem="c8S-1p-Aa5" firstAttribute="leading" secondItem="7Mt-9o-kl9" secondAttribute="leading" constant="24" id="hRT-JU-Uya"/>
+                    <constraint firstAttribute="trailing" secondItem="c8S-1p-Aa5" secondAttribute="trailing" constant="24" id="vtz-e7-Qx1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="messageContainerView" destination="gUv-Bf-kYk" id="7YJ-EL-IiD"/>
+                <outlet property="senderImageMessage" destination="1rQ-yp-Ex7" id="VEJ-Mq-gDO"/>
+                <outlet property="senderMessageTimeLbl" destination="hpg-Ut-vbh" id="mZ7-pW-Nl4"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="200.22321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="303-3034733_funny-animals-full-hd-wallpapers-cat-desktop-background" width="1920" height="1080"/>
+        <namedColor name="#838383">
+            <color red="0.51399999856948853" green="0.51399999856948853" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
