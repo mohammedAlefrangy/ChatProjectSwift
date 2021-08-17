@@ -10,10 +10,12 @@ import SDWebImage
 
 class SenderImageTVC: UITableViewCell {
 
-    @IBOutlet weak var messageContainerView: UIView!
-
-    @IBOutlet weak var senderMessageTimeLbl: UILabel!
-    @IBOutlet weak var senderImageMessage: UIImageView!
+    @IBOutlet weak var messageContainerView : UIView!
+    @IBOutlet weak var senderMessageTimeLbl : UILabel!
+    @IBOutlet weak var senderImageMessage   : UIImageView!
+    
+    @IBOutlet weak var viewUnRead : UIView!
+    @IBOutlet weak var unReadLbl  : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

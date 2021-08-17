@@ -18,23 +18,23 @@ import Firebase
 class MessageVC: UIViewController {
     
     
-    @IBOutlet weak var lbAudioTimer: UILabel!
-    @IBOutlet weak var ivAudioMic: UIImageView!
+    @IBOutlet weak var lbAudioTimer     : UILabel!
+    @IBOutlet weak var ivAudioMic       : UIImageView!
     
-    @IBOutlet weak var sendButtonWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var sendButtonHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var sendButtonTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var sendButtonWidthConstraint    : NSLayoutConstraint!
+    @IBOutlet weak var sendButtonHeightConstraint   : NSLayoutConstraint!
+    @IBOutlet weak var sendButtonTrailingConstraint : NSLayoutConstraint!
     
-    @IBOutlet var sendButtonLongPressGesture: UILongPressGestureRecognizer!
-    @IBOutlet var sendButtonPanGesture: UIPanGestureRecognizer!
-    @IBOutlet weak var slideToCancelView: UIStackView!
+    @IBOutlet var sendButtonLongPressGesture    : UILongPressGestureRecognizer!
+    @IBOutlet var sendButtonPanGesture          : UIPanGestureRecognizer!
+    @IBOutlet weak var slideToCancelView        : UIStackView!
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var messageTF: UITextField!
-    @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var tableView        : UITableView!
+    @IBOutlet weak var messageTF        : UITextField!
+    @IBOutlet weak var sendButton       : UIButton!
     
     
-    @IBOutlet weak var viewAudioTimer: UIView!
+    @IBOutlet weak var viewAudioTimer   : UIView!
     var fromAccpectOffer = false
     var isUser = false
     
@@ -69,7 +69,7 @@ class MessageVC: UIViewController {
     private var myUserId = "51a33729856d4d3792b6a19a50048bcf"
     var messages = [MessageData]()
     private var isReciverActive : Bool = true
-    
+    private var  fisrt_unseen_messgaesId : String = ""
     
     
     override func viewDidLoad() {
@@ -110,16 +110,16 @@ class MessageVC: UIViewController {
 
             self.chatArray.append(snapshot.key)
             
-//            if msg.SenderUid != "\(self.myUserId)" &&  msg.status == 0 {
-//                if self.fisrt_unseen_messgaesId == "" {
-//                    self.fisrt_unseen_messgaesId = snapshot.key
-//                }
-//
-//                Constant.DBRefrence.child(Constant.chatRoomsNode)
-//                    .child(self.chatRoomId)
-//                    .child(Constant.messages)
-//                    .child(snapshot.key).updateChildValues(["status":1])
-//            }
+            if msg.SenderUid != "\(self.myUserId)" &&  msg.status == 0 {
+                if self.fisrt_unseen_messgaesId == "" {
+                    self.fisrt_unseen_messgaesId = snapshot.key
+                }
+
+                Constant.DBRefrence.child(Constant.chatRoomsNode)
+                    .child("336")
+                    .child(Constant.messages)
+                    .child(snapshot.key).updateChildValues(["status":1])
+            }
             
             print("msg.mediaType \(msg.mediaType)")
             switch msg.mediaType {
@@ -608,8 +608,11 @@ extension MessageVC : AVAudioRecorderDelegate {
             self.saveMediaMessage(withImage: nil, withVideo: audio)
 //            self.toUploadVoiceFile(filePathAudio: audio)
         }
-        
-        
+    }
+    
+    private func hideUnReadText(){
+        self.fisrt_unseen_messgaesId = ""
+        tableView.reloadData()
     }
 }
 
@@ -652,6 +655,19 @@ extension MessageVC: UITableViewDelegate, UITableViewDataSource {
             if item.senderID != myUserId {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTVC", for: indexPath) as! SenderTVC
                 cell.selectionStyle = .none
+                
+                if item.senderName == self.fisrt_unseen_messgaesId {
+                    cell.unReadLbl.isHidden = false
+                    cell.unReadLbl.text = "UnRead"
+                    cell.viewUnRead.isHidden = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                        self.hideUnReadText()
+                    }
+                } else{
+                    cell.unReadLbl.isHidden = true
+                    cell.viewUnRead.isHidden = true
+                }
+                
                 cell.configure(data: item)
                 return cell
             } else {
@@ -665,6 +681,17 @@ extension MessageVC: UITableViewDelegate, UITableViewDataSource {
             if item.senderID != myUserId{
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SenderImageTVC", for: indexPath) as! SenderImageTVC
                 cell.selectionStyle = .none
+                if item.senderName == self.fisrt_unseen_messgaesId {
+                    cell.unReadLbl.isHidden = false
+                    cell.unReadLbl.text = "UnRead"
+                    cell.viewUnRead.isHidden = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                        self.hideUnReadText()
+                    }
+                } else{
+                    cell.unReadLbl.isHidden = true
+                    cell.viewUnRead.isHidden = true
+                }
                 cell.configure(data: item)
                 return cell
             } else {
@@ -679,6 +706,17 @@ extension MessageVC: UITableViewDelegate, UITableViewDataSource {
             if item.senderID != myUserId {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "VideoMessageTVC", for: indexPath) as! VideoMessageTVC
                 cell.selectionStyle = .none
+                if item.senderName == self.fisrt_unseen_messgaesId {
+                    cell.unReadLbl.isHidden = false
+                    cell.unReadLbl.text = "UnRead"
+                    cell.viewUnRead.isHidden = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                        self.hideUnReadText()
+                    }
+                } else{
+                    cell.unReadLbl.isHidden = true
+                    cell.viewUnRead.isHidden = true
+                }
                 cell.configure(data: item)
                 return cell
             } else {
@@ -716,6 +754,9 @@ extension MessageVC: UITableViewDelegate, UITableViewDataSource {
 //            cell.configure(data: item)
             return cell
         }
+        
+        
+
         /*
         if item.type == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SendingTimeTVC", for: indexPath) as! SendingTimeTVC

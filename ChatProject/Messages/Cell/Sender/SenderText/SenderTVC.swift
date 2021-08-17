@@ -11,9 +11,12 @@ import UIKit
 
 class SenderTVC: UITableViewCell {
 
-    @IBOutlet weak var messageContainerView: UIView!
-    @IBOutlet weak var messageTextLbl: UILabel!
-    @IBOutlet weak var messageTimeLbl: UILabel!
+    @IBOutlet weak var messageContainerView : UIView!
+    @IBOutlet weak var messageTextLbl       : UILabel!
+    @IBOutlet weak var messageTimeLbl       : UILabel!
+    
+    @IBOutlet weak var viewUnRead   : UIView!
+    @IBOutlet weak var unReadLbl    : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

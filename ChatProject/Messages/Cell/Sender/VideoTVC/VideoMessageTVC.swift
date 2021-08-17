@@ -11,8 +11,10 @@ import AVFoundation
 
 class VideoMessageTVC: UITableViewCell {
 
-    @IBOutlet weak var messageTimeLbl: UILabel!
-    @IBOutlet weak var playerView: PlayerView!
+    @IBOutlet weak var messageTimeLbl   : UILabel!
+    @IBOutlet weak var playerView       : PlayerView!
+    @IBOutlet weak var viewUnRead       : UIView!
+    @IBOutlet weak var unReadLbl        : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
