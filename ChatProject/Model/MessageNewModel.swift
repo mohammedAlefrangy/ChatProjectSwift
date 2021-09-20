@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-struct Message {
+struct MessageNewModel {
     
     var Message       : String
     var SenderUid     : String
@@ -92,7 +92,7 @@ struct Message {
     }
 }
 
-struct MessageData {
+struct MessageDataNewModel {
     var senderID       : String?
     var senderName     : String?
     var date           : String?
@@ -101,10 +101,10 @@ struct MessageData {
     var mediaURL       : String?
     var urlFile        : String?
     
-    var messageType    : MessageType
+    var messageType    : MessageTypeNewModel
 }
 
-enum MessageType {
+enum MessageTypeNewModel {
     
     case text
     case file

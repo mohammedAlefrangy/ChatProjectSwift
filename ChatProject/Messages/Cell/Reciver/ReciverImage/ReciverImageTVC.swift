@@ -34,7 +34,7 @@ class ReciverImageTVC: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             messageTimeLbl.text = item.date
             
@@ -44,7 +44,7 @@ class ReciverImageTVC: UITableViewCell {
     }
     
     
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
     }
     

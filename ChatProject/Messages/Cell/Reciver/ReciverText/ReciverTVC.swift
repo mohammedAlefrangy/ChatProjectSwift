@@ -29,7 +29,7 @@ class ReciverTVC: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             messageTextLbl.text = item.textMessage
             messageSendTimeLbl.text = item.date
@@ -39,7 +39,7 @@ class ReciverTVC: UITableViewCell {
     }
     
     
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
     }
     

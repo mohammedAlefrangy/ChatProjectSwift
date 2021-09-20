@@ -68,7 +68,7 @@ class SoundMessageTestTVC: UITableViewCell, AVAudioRecorderDelegate {
     
     
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             
             url = URL(string: item.mediaURL ?? "https://firebasestorage.googleapis.com:443/v0/b/lit-tracker-2b7a0.appspot.com/o/messageWithMedia336353628DD-5041-47B0-855A-29463E023AE0%2F8AA87DAC-ECBB-4FFC-834E-B3BDC53917D2.m4a?alt=media&token=39209b6c-c8c0-45da-9674-9be2b8338c4f")
@@ -81,7 +81,7 @@ class SoundMessageTestTVC: UITableViewCell, AVAudioRecorderDelegate {
     }
     
     
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
         
     }
@@ -179,9 +179,8 @@ class SoundMessageTestTVC: UITableViewCell, AVAudioRecorderDelegate {
                 }
                 
                 self?.audioPlayer = player
-                
-                self?.audioPlayer.prepareToPlay()
                 self?.audioPlayer.delegate = self
+                self?.audioPlayer.prepareToPlay()
                 self?.audioPlayer.play()
                 
                 
@@ -235,14 +234,14 @@ class SoundMessageTestTVC: UITableViewCell, AVAudioRecorderDelegate {
             _ = AVPlayerItem(url: url as URL)
               
             self.audioPlayer = try AVAudioPlayer(contentsOf: url as URL)
-            audioPlayer.prepareToPlay()
-            audioPlayer.volume = 1.0
             audioPlayer.delegate = self
+            audioPlayer.prepareToPlay()
             audioPlayer.play()
+            audioPlayer.volume = 1.0
 
           } catch let error as NSError {
               //self.player = nil
-              print(error.localizedDescription)
+              print("The error is: " + error.localizedDescription)
           } catch {
               print("AVAudioPlayer init failed")
           }

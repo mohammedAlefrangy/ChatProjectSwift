@@ -30,7 +30,7 @@ class ReciverVideoMessageTVC: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             let url = NSURL(string: item.mediaURL!);
             let avPlayer = AVPlayer(url: url as! URL);
@@ -42,7 +42,7 @@ class ReciverVideoMessageTVC: UITableViewCell {
     }
     
     
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
     }
     

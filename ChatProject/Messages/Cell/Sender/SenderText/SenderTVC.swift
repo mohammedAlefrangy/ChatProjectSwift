@@ -32,7 +32,7 @@ class SenderTVC: UITableViewCell {
 
     }
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             messageTextLbl.text = item.textMessage
             messageTimeLbl.text = item.date
@@ -42,7 +42,7 @@ class SenderTVC: UITableViewCell {
     }
     
     
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
     }
 //    

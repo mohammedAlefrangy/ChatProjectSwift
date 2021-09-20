@@ -37,7 +37,7 @@ class SenderImageTVC: UITableViewCell {
     }
     
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             senderImageMessage.sd_setImage(with: URL(string: item.mediaURL ?? ""), completed: nil)
             senderMessageTimeLbl.text = item.date
@@ -47,7 +47,7 @@ class SenderImageTVC: UITableViewCell {
     }
 
 
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
     }
     

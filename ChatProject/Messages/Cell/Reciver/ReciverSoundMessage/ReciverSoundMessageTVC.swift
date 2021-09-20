@@ -59,7 +59,7 @@ class ReciverSoundMessageTVC: UITableViewCell, AVAudioRecorderDelegate {
         
     }
     
-    private var item: MessageData! {
+    private var item: MessageDataNewModel! {
         didSet{
             
             url = URL(string: "https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.m4a")
@@ -72,7 +72,7 @@ class ReciverSoundMessageTVC: UITableViewCell, AVAudioRecorderDelegate {
     }
     
     
-    func configure(data: MessageData) {
+    func configure(data: MessageDataNewModel) {
         self.item = data
         
     }
